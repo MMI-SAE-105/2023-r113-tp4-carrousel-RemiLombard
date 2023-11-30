@@ -8,23 +8,30 @@
     <script src="//unpkg.com/alpinejs" defer></script>
 
     <style>
+
        * {
         box-sizing: border-box;
         }
+
         img {
         max-width: 100%;
         height: auto;
         }
+
         .carrousel_parent-ecrans {
         display: flex;
-        width: 500%; 
+        width: 100%; 
         overflow-x: scroll;
         scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
         }
+
         .carrousel_ecran {
-        flex: 1;
+        width: 100%;
+        flex: 0 0 100%;
         scroll-snap-align: start;
         }
+
         .carrousel_ecran figure {
         margin: 0;
         }

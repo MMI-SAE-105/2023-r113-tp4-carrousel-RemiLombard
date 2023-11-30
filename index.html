@@ -33,8 +33,38 @@
         }
 
         .carrousel_ecran figure {
-        margin: 0;
+        margin: none;
         }
+
+        .carrousel {
+        position: relative;
+        }
+
+        .carrousel_btn {
+        position: absolute;
+        top: 50%;
+        top: calc(
+            min(500px, 100vw) / 16 * 9 / 2 + 1rem);
+        transform: translateY(-50%); 
+        width: 2rem;
+        height: 2rem;
+        background: rgba(0,0,0,0.5);
+        border-radius: 50%;
+        border: none;
+        display: grid;
+        place-content: center;
+        color: #fff;
+        cursor: pointer;
+        }
+
+        .carrousel_btn-avant {
+        left: 0;
+        }
+
+        .carrousel_btn-apres {
+        right: 0;
+        }
+
 
     </style>
 

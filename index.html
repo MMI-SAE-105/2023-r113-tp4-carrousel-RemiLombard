@@ -70,11 +70,11 @@
 
         .caroussel_liste-liens {
         display: flex; 
-        justify-content: center; 
+        justify-content: space-around; 
         margin: 0; 
         padding: 0; 
         list-style: none; 
-        gap: 1rem;
+        flex-wrap: wrap;
         }
 
         .caroussel_liste-liens a {
@@ -90,7 +90,7 @@
         margin: 5px;
         cursor: pointer;
         transition: background-color 0.3s, color 0.3s;
-        width: 150px;
+        width: 80px;
         }
 
         .caroussel_liste-liens a.actif {
@@ -113,9 +113,9 @@
         }
 
         .carrousel_ecran figure img {
-        max-width: 70%; /* Ajuste la largeur maximale de l'image à la taille de son conteneur */
-        height: auto; /* Permet à la hauteur de l'image de s'ajuster automatiquement pour conserver les proportions originales */
-        object-fit: cover; /* Remplit la zone de l'élément tout en préservant les proportions de l'image */
+        max-width: 70%; 
+        height: auto; 
+        object-fit: cover; 
         }
 
     </style>
@@ -135,31 +135,31 @@
             <div id="ecran-1" class="carrousel_ecran">
                 <figure>
                     <img src="/img/earth.png" alt="image ecran 1">
-                    <figcaption>Ecran 1</figcaption>
+                    <figcaption>La planète Terre</figcaption>
                 </figure>
             </div>
             <div id="ecran-2" class="carrousel_ecran">
                 <figure>
                     <img src="/img/mars.jpg" alt="image ecran 2">
-                    <figcaption>Ecran 2</figcaption>
+                    <figcaption>La planète Mars</figcaption>
                 </figure>
             </div>
             <div id="ecran-3" class="carrousel_ecran">
                 <figure>
                     <img src="/img/jupiter.png" alt="image ecran 3">
-                    <figcaption>Ecran 3</figcaption>
+                    <figcaption>La planète Jupiter</figcaption>
                 </figure>
             </div>
             <div id="ecran-4" class="carrousel_ecran">
                 <figure>
                     <img src="/img/mercury.jpg" alt="image ecran 4">
-                    <figcaption>Ecran 4</figcaption>
+                    <figcaption>La planète Mercure</figcaption>
                 </figure>
             </div>
             <div id="ecran-5" class="carrousel_ecran">
                 <figure>
                     <img src="/img/saturn.jpg" alt="image ecran 5">
-                    <figcaption>Ecran 5</figcaption>
+                    <figcaption>La planète Saturne</figcaption>
                 </figure>
             </div>
         </div>

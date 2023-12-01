@@ -87,6 +87,7 @@
         margin: 5px;
         cursor: pointer;
         transition: background-color 0.3s, color 0.3s;
+        width: 150px;
         }
 
         .caroussel_liste-liens a.actif {
@@ -106,6 +107,12 @@
         .caroussel_liste-liens a:hover{
         background-color:#dba634;
         color:#ffffff;
+        }
+
+        .carrousel_ecran figure img {
+        max-width: 70%; /* Ajuste la largeur maximale de l'image à la taille de son conteneur */
+        height: auto; /* Permet à la hauteur de l'image de s'ajuster automatiquement pour conserver les proportions originales */
+        object-fit: cover; /* Remplit la zone de l'élément tout en préservant les proportions de l'image */
         }
 
     </style>
@@ -154,11 +161,11 @@
             </div>
         </div>
         <ul class="caroussel_liste-liens">
-            <li><a href="#ecran-1" :class="{actif:hrefCourant==='#ecran-1'}" class="caroussel_lien">Image 1</a></li>
-            <li><a href="#ecran-2" :class="{actif:hrefCourant==='#ecran-2'}" class="caroussel_lien">Image 2</a></li>
-            <li><a href="#ecran-3" :class="{actif:hrefCourant==='#ecran-3'}" class="caroussel_lien">Image 3</a></li>
-            <li><a href="#ecran-4" :class="{actif:hrefCourant==='#ecran-4'}" class="caroussel_lien">Image 4</a></li>
-            <li><a href="#ecran-5" :class="{actif:hrefCourant==='#ecran-5'}" class="caroussel_lien">Image 5</a></li>
+            <li><a href="#ecran-1" :class="{actif:hrefCourant==='#ecran-1'}" class="caroussel_lien">Terre</a></li>
+            <li><a href="#ecran-2" :class="{actif:hrefCourant==='#ecran-2'}" class="caroussel_lien">Mars</a></li>
+            <li><a href="#ecran-3" :class="{actif:hrefCourant==='#ecran-3'}" class="caroussel_lien">Jupiter</a></li>
+            <li><a href="#ecran-4" :class="{actif:hrefCourant==='#ecran-4'}" class="caroussel_lien">Mercure</a></li>
+            <li><a href="#ecran-5" :class="{actif:hrefCourant==='#ecran-5'}" class="caroussel_lien">Saturne</a></li>
 
         </ul>
     </div>

@@ -86,8 +86,7 @@
         padding: 8px 12px; 
         margin: 5px;
         cursor: pointer;
-        transition: background-color 1s;
-        transition: color 1s;
+        transition: background-color 0.3s, color 0.3s;
         }
 
         .caroussel_liste-liens a.actif {
@@ -102,9 +101,13 @@
         margin: 5px;
         cursor: pointer;
         transition:color 1s; 
-        transition:background-color 1s
+        transition:background-color 0.3s, color 0.3s;
         }
 
+        .caroussel_liste-liens a:hover{
+        background-color: #3498db;
+        color:#ffffff;
+        }
 
     </style>
 
@@ -152,11 +155,11 @@
             </div>
         </div>
         <ul class="caroussel_liste-liens">
-            <li><a href="#ecran-1" :class="{actif:hrefCourant==='#ecran-1'}" class="caroussel_lien">ecran 1</a></li>
-            <li><a href="#ecran-2" :class="{actif:hrefCourant==='#ecran-2'}" class="caroussel_lien">ecran 2</a></li>
-            <li><a href="#ecran-3" :class="{actif:hrefCourant==='#ecran-3'}" class="caroussel_lien">ecran 3</a></li>
-            <li><a href="#ecran-4" :class="{actif:hrefCourant==='#ecran-4'}" class="caroussel_lien">ecran 4</a></li>
-            <li><a href="#ecran-5" :class="{actif:hrefCourant==='#ecran-5'}" class="caroussel_lien">ecran 5</a></li>
+            <li><a href="#ecran-1" :class="{actif:hrefCourant==='#ecran-1'}" class="caroussel_lien">Image 1</a></li>
+            <li><a href="#ecran-2" :class="{actif:hrefCourant==='#ecran-2'}" class="caroussel_lien">Image 2</a></li>
+            <li><a href="#ecran-3" :class="{actif:hrefCourant==='#ecran-3'}" class="caroussel_lien">Image 3</a></li>
+            <li><a href="#ecran-4" :class="{actif:hrefCourant==='#ecran-4'}" class="caroussel_lien">Image 4</a></li>
+            <li><a href="#ecran-5" :class="{actif:hrefCourant==='#ecran-5'}" class="caroussel_lien">Image 5</a></li>
 
         </ul>
     </div>

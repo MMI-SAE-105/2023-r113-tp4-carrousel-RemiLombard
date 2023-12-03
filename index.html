@@ -13,9 +13,18 @@
         box-sizing: border-box;
         }
 
+        body {
+        background-color: #000000; 
+        }
+
         img {
         max-width: 100%;
         height: auto;
+        border: 5px solid #cfccff;
+        }
+
+        figcaption {
+        color: #ffffff;
         }
 
         .carrousel_parent-ecrans {
@@ -46,24 +55,16 @@
         .carrousel_btn {
         position: absolute;
         top: 50%;
-        top: calc(
-            min(500px, 100vw) / 16 * 9 / 2 + 1rem);
-        transform: translateY(-50%); 
+        transform: translateY(-50%);
         width: 2rem;
         height: 2rem;
-        background: #05003f;
+        background: #cfccff;
         border-radius: 10px;
-        border: 2px solid #04002d;
+        border: 2px solid #05003f;
         display: grid;
         place-content: center;
-        color: #ffffff;
-        cursor: pointer;
-        }
-
-        .carrousel_btn:hover {
-        background-color: #cfccff;
         color: #000000;
-        transition: background-color 0.3s, color 0.3s;
+        cursor: pointer;
         }
 
         .carrousel_btn-avant {
@@ -86,10 +87,10 @@
         .caroussel_liste-liens a {
         text-decoration: none;
         display: inline-block;
-        background-color: #05003f; 
+        background-color: #cfccff; 
         border-radius: 100px; 
         border: 2px solid #04002d; 
-        color: #ffffff;
+        color: #000000;
         text-align: center;
         font-size: 16px;
         padding: 8px 12px; 
@@ -101,10 +102,10 @@
 
         .caroussel_liste-liens a.actif {
         display: inline-block;
-        background-color: #cfccff; 
+        background-color: #05003f; 
         border-radius: 100px; 
-        border: 2px solid #04002d; 
-        color: #000000;
+        border: 2px solid #cfccff; 
+        color: #ffffff;
         text-align: center;
         font-size: 16px;
         padding: 8px 12px; 
@@ -114,8 +115,9 @@
         }
 
         .caroussel_liste-liens a:hover{
-        background-color:#cfccff;
-        color:#000000;
+        background-color:#05003f;
+        color:#ffffff;
+        border: 2px solid #cfccff;
         }
 
         .carrousel_ecran figure img {

@@ -51,13 +51,19 @@
         transform: translateY(-50%); 
         width: 2rem;
         height: 2rem;
-        background: rgba(0, 0, 0, 0.5);
+        background: #05003f;
         border-radius: 10px;
-        border: none;
+        border: 2px solid #04002d;
         display: grid;
         place-content: center;
-        color: #fff;
+        color: #ffffff;
         cursor: pointer;
+        }
+
+        .carrousel_btn:hover {
+        background-color: #cfccff;
+        color: #000000;
+        transition: background-color 0.3s, color 0.3s;
         }
 
         .carrousel_btn-avant {
@@ -80,10 +86,10 @@
         .caroussel_liste-liens a {
         text-decoration: none;
         display: inline-block;
-        background-color: #fff3e1; 
+        background-color: #05003f; 
         border-radius: 100px; 
-        border: 2px solid #b99029; 
-        color: #000000;
+        border: 2px solid #04002d; 
+        color: #ffffff;
         text-align: center;
         font-size: 16px;
         padding: 8px 12px; 
@@ -95,10 +101,10 @@
 
         .caroussel_liste-liens a.actif {
         display: inline-block;
-        background-color: #dba634; 
+        background-color: #cfccff; 
         border-radius: 100px; 
-        border: 2px solid #b99029; 
-        color: #ffffff;
+        border: 2px solid #04002d; 
+        color: #000000;
         text-align: center;
         font-size: 16px;
         padding: 8px 12px; 
@@ -108,8 +114,8 @@
         }
 
         .caroussel_liste-liens a:hover{
-        background-color:#dba634;
-        color:#ffffff;
+        background-color:#cfccff;
+        color:#000000;
         }
 
         .carrousel_ecran figure img {
